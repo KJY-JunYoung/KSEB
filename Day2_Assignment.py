@@ -11,7 +11,7 @@ def is_prime(num) -> bool:
     :return: boolean type
     """
     if num >= 2:
-        for i in range(2, int(num ** 0.5) + 1):
+        while i < (int(num ** 0.5) + 1):
             if num % i == 0:
                 return False
                 #is_prime = False
